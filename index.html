@@ -239,16 +239,27 @@
             height: 250px;
             position: relative;
             overflow: hidden;
+            background-color: #444; /* Changed background to a light grey */
+        }
+
+        .giant-wheel-preview,
+        .moon-preview {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: none;
         }
 
         .moon-preview {
-            position: absolute;
             width: 200%;
             height: 500px;
-            top: 50%;
-            left: 50%;
             transform: translate(-50%, -50%) scale(0.5);
-            border: none;
+        }
+
+        .giant-wheel-preview {
+            width: 125%; /* 100% / 0.8 */
+            height: 312.5px; /* 250px / 0.8 */
+            transform: translate(-48%, -50%) scale(0.8);
         }
 
         .project-info {
@@ -400,7 +411,7 @@
         <main>
             <section id="hero">
                 <div class="hero-content">
-                    <img src="IMG_20251003_004138.jpg" alt="Asit Kumar Sahu Profile Picture" class="profile-pic">
+                    <img src="IMG_2025103_004138.jpg" alt="Asit Kumar Sahu Profile Picture" class="profile-pic">
                     <h1 class="hero-title">Hello, I'm Asit Kumar Sahu</h1>
                     <p class="hero-subtitle">A passionate Computer Science student exploring the world of web development and technology.</p>
                 </div>
@@ -436,7 +447,9 @@
                         </div>
                     </div>
                     <div class="project-card">
-                         <iframe class="project-animation-preview" src="https://htmlpreview.github.io/?https://github.com/RageAsit/WebDev/blob/main/giantwheel.htm"></iframe>
+                        <div class="animation-container">
+                            <iframe class="project-animation-preview giant-wheel-preview" src="https://htmlpreview.github.io/?https://github.com/RageAsit/WebDev/blob/main/giantwheel.htm"></iframe>
+                        </div>
                          <div class="project-info">
                             <h3>Giant Wheel Animation</h3>
                             <p>A visually appealing animation of a giant wheel created using only HTML and CSS. This project demonstrates complex CSS properties, including keyframes and transforms, to achieve a smooth, continuous rotation effect.</p>
@@ -480,4 +493,9 @@
 
 </body>
 </html>
+
+
+
+
+
 
